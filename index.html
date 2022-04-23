@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Nakiti Social</title>
+</head>
+<body>
+
+    <!----------------- HEADER --------------- -->
+    <header>
+
+        <div class="container nav">
+
+            <div class="logo">
+                <a href="/">.nakitiSocial</a>
+                <!-- <a href="/"><img src="assets/logo.png" alt="" style="width: 25%"></a> -->
+            </div>
+    
+            <div class="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search" type="search" placeholder="Search nakitiSocial">
+            </div>
+            
+           <div class="nav-right-side">
+            <label class="btn" for="create-post">Create</label>
+
+            <div class="profile-picture">
+                <img src="assets/pp.jpg" alt="profile picture">
+                <span></span>
+            </div>
+           </div>
+
+        </div>
+
+    </header>
+
+    <!----------------- MAIN BODY SECTION - GRID --------------- -->
+
+    <main>
+
+        
+        <!-- STATUS IMAGES -->
+
+        
+        <div class="status-img">
+            <img src="assets/amelie.jpg" alt="">
+
+        </div>
+        
+        <div class="status-img2">
+            <img src="assets/jay.jpg" alt="">
+
+        </div>
+        
+        <div class="status-img3">
+            <img src="assets/steph.jpg" alt="">
+
+        </div>
+        
+        <div class="status-img4">
+            <img src="assets/anna.jpg" alt="">
+
+        </div>
+
+        <div class="container">
+
+            <!----------------- SIDEBAR --------------- -->
+            <div class="left">
+               <div class="test">
+                <div class="handle side-container">
+                    <div class="profile-picture">
+                        <img src="assets/pp.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Inacio Nakiti</h4>
+                            <p class="text-muted">@inakiti</p>
+                        </span>
+    
+                   </div>
+                   <div class="menu-items side-container">
+                   
+                    
+                    <ul>
+                        <li id="menu_item" class="active">
+                            <a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                        </li>
+                        <li id="menu_item" class="hide">
+                            <a><i class="fa fa-compass" aria-hidden="true"></i>Explore</a>
+                        </li>
+                        <li id="menu_item" class="notification notification-popup">
+                            <a><i class="fa fa-bell" aria-hidden="true"></i>Notifications</a>
+                            <span class="alert">
+                                5
+                            </span>
+
+                            
+                        </li>
+                        <li  id="menu_item" class="notification msg-notification"> 
+                            <a><i class="fa fa-envelope" aria-hidden="true"></i>Message</a>
+                            <span class="msg-alert">
+                                3
+                            </span>
+                        </li>
+                        <li id="menu_item" class="hide">
+                            <a><i class="fa fa-bookmark" aria-hidden="true"></i>Bookmarks</a>
+                        </li>
+                        <li id="menu_item" class="hide">
+                            <a><i class="fa fa-line-chart" aria-hidden="true"></i>Analytics</a>
+                        </li>
+                        <li id="menu_item" class="hide">
+                            <a><i class="fa fa-paint-brush" aria-hidden="true"></i>Theme</a>
+                        </li>
+                        <li  id="menu_item">
+                            <a><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+                        </li>
+                        <li  id="menu_item" class="hamburger flexing">
+                            <a class="bar-icon"><i class="fa fa-bars" aria-hidden="true" onclick="myMenuFunction()"></i></a>
+                            <a class="x-icon"><i class="fa fa-times" aria-hidden="true" onclick="myMenuFunction()"></i></a>
+                        </li>
+                    </ul>
+    
+                   </div>
+                   
+                   <div class="mobile-menu">
+                    <div class="handle side-container">
+                        <div class="profile-picture">
+                            <img src="assets/pp.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <h4>Inacio Nakiti</h4>
+                                <p class="text-muted">See your profile</p>
+                            </span>
+        
+                       </div>
+
+                       <div class="friends-requests">
+                        <h4 class="requests">Friend Requests</h4>
+    
+                        <div id="side_container" class="side-container hide" style="margin-top: 0.6rem">
+                            <p class="accepted_msg">Request Accepted 🥳</p>
+                            <p class="removed_msg">Request Removed 🙃</p>
+                           <div class="requests_inner_container">
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/judas-iscariot-9358799-1-402.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <h4>Judas Iscariot</h4>
+                                        <p class="text-muted-m">5 mutual friends</p>
+                                    </span>
+        
+                            </div>
+                                <div class="btns-inline">
+                                    <a class="btn" onclick="accepted(); timeOut();">Accept</a>
+                                    <a class="btn btn-clear" onclick="removed(); timeOut()">Decline</a>
+                                </div>
+                           </div>
+                        </div>
+                        <div id="side_container2" class="side-container hide2" style="margin-top: 0.6rem">
+                            <p class="accepted_msg2">Request Accepted 🥳</p>
+                            <p class="removed_msg2">Request Removed 🙃</p>
+                           <div class="requests_inner_container2">
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/Leila-alcasid-solo.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <h4>Leila N 🌛</h4>
+                                        <p class="text-muted-m">12 mutual friends</p>
+                                    </span>
+        
+                            </div>
+                                <div class="btns-inline">
+                                    <a class="btn" onclick="acceptedTwo(); timeOutTwo();">Accept</a>
+                                    <a class="btn btn-clear" onclick="removedTwo(); timeOutTwo()">Decline</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="side_container3" class="side-container hide3" style="margin-top: 0.6rem">
+                            <p class="accepted_msg3">Request Accepted 🥳</p>
+                            <p class="removed_msg3">Request Removed 🙃</p>
+                            <div class="requests_inner_container3">
+                                <div class="top-feed">
+                                    <div class="friends-profile-picture">
+                                        <img src="assets/james.jpg" alt="profile picture">
+                                    </div>
+                                        <span>
+                                            <h4>Steven James</h4>
+                                            <p class="text-muted-m">2 mutual friends</p>
+                                        </span>
+            
+                                </div>
+                                    <div class="btns-inline">
+                                        <a class="btn" onclick="acceptedThree(); timeOutThree();">Accept</a>
+                                        <a class="btn btn-clear" onclick="removedThree(); timeOutThree()">Decline</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="btn logout">Logout</div>
+                       </div>
+                   </div>
+
+                   <div class="btn btn-create-sb">
+                       <a href="#">Create Post</a>
+                    </div>
+               </div>
+            </div>
+            <div class="inac">
+                <div class="notification-action">
+                    <div class="friends-profile-picture">
+                        <img src="assets/jay-z.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Jay Z <span class="friend-action">accepted your friend request</span></h4>
+                            <p class="text-muted-action">25 MINUTES AGO</p>
+                        </span>
+                </div>
+                <div class="notification-action">
+                    <div class="friends-profile-picture">
+                        <img src="assets/amelie.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Amelie Loz <span class="friend-action">commented on your post</span></h4>
+                            <p class="text-muted-action">1 HOUR AGO</p>
+                        </span>
+                </div>
+                <div class="notification-action">
+                    <div class="friends-profile-picture">
+                        <img src="assets/aa.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Anna and 29 others <span class="friend-action">liked your post</span></h4>
+                            <p class="text-muted-action">2 HOURS AGO</p>
+                        </span>
+                </div>
+                <div class="notification-action">
+                    <div class="friends-profile-picture">
+                        <img src="assets/will.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Will Smith <span class="friend-action">commented on a post you are tagged in</span></h4>
+                            <p class="text-muted-action">4 HOURS AGO</p>
+                        </span>
+                </div>
+                <div class="notification-action">
+                    <div class="friends-profile-picture">
+                        <img src="assets/anthony.jpg" alt="profile picture">
+                    </div>
+                        <span>
+                            <h4>Anthony Bill <span class="friend-action">invited you to like a page</span></h4>
+                            <p class="text-muted-action">6 DAYS AGO</p>
+                        </span>
+                </div>
+
+            </div>
+        
+            <!----------------- MIDDLE - GRID --------------- -->
+            <div class="middle">
+                <div class="stories-container">
+                    <div class="col first">
+                        <div class="top">
+                            
+                        </div>
+
+                        <div class="bottom">
+                            <p>Create Story</p>
+                        </div>
+                    </div>
+
+                    <div class="col second" onclick="status()">
+                        <img src="assets/amelie.jpg" alt="">
+                        <p class="p">Amelie Loz</p>
+                    </div>
+
+                    <div class="col third" onclick="statusTwo()">
+                        <img src="assets/jay.jpg" alt="">
+                        <p class="p">Jay B</p>
+                    </div>
+
+                    <div class="col fourth" onclick="statusThree()">
+                        <img src="assets/steph.jpg" alt="">
+                        <p class="p">Steph Lee</p>
+                    </div>
+
+                    <div class="col fifth" onclick="statusFour()">
+                        <img src="assets/anna.jpg" alt="">
+                        <p class="p">Anna Bel</p>
+                    </div>
+                </div>
+
+                <div class="status">
+                    <img src="assets/pp.jpg" alt="">
+                    <input class="input" type="text" placeholder="What's on your mind, success?">
+                    <input class="btn-post btn" type="submit" value="Post">
+                </div>
+                
+                <!----------------- POSTS ON THE FEED AREA --------------- -->
+
+               <div class="post-feed">
+
+                 <!-- FIRST POST -->
+                 <div class="post-container">
+
+                    <div class="top-feed">
+                        <div class="hidden">
+                            <a>Save Post</a>
+                            <a>Hide Post</a>
+                            <a>Report Post</a>
+                        </div>
+                        <div class="friends-profile-picture">
+                            <img src="assets/amelie.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <h4>Amelie Loz</h4>
+                                <p class="text-muted">Cape Town, 3 hours ago</p>
+                            </span>
+                            <b>...</b>
+                    </div>
+                        
+                    <img class="posted-image" src="assets/post-1.jpg" alt="">
+
+                    <div class="post-icons">
+                        <div class="left">
+                            <i class="fa fa-heart active-icon" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </div>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                    </div>
+                    
+                    <div class="likes">
+                        <img src="assets/liked-1.jpg" alt="">
+                        <img src="assets/liked-2.jpg" alt="">
+                        <img src="assets/liked-3.jpg" alt="">
+
+                        <p>Liked by <b>Inacio Joao</b> and <b>2.327 others</b></p>
+                    </div>
+                    
+                    <p class="description"><b>Amelie Loz</b> I'm so proud of how far we've come and I can't wait to see what the future holds.</p>
+                    <a class="comments">View all 639 comments</a>
+                </div>
+
+                <!-- SECOND POST -->
+                <div class="post-container">
+
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/anna.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <h4>Anna Bell</h4>
+                                <p class="text-muted">London, 1 hour ago</p>
+                            </span>
+                            <b>...</b>
+                    </div>
+                        
+                    <img class="posted-image" src="assets/post-2.jpg" alt="">
+
+                    <div class="post-icons">
+                        <div class="left">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </div>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                    </div>
+                    
+                    <div class="likes">
+                        <img src="assets/liked-2.jpg" alt="">
+                        <img src="assets/liked-1.jpg" alt="">
+                        <img src="assets/liked-3.jpg" alt="">
+
+                        <p>Liked by <b>Jessika Kim</b> and <b>148 others</b></p>
+                    </div>
+                    
+                    <p class="description"><b>Anna Lee</b> Stay tuned we're live in studio.</p>
+                    <a class="comments">View all 41 comments</a>
+                </div>
+
+                <!-- THIRD POST -->
+                <div class="post-container">
+
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/suarez-pp.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <h4>Suarez Sim</h4>
+                                <p class="text-muted">Florida, 4 hours ago</p>
+                            </span>
+                            <b>...</b>
+                    </div>
+                        
+                    <img class="posted-image" src="assets/post-3.jpg" alt="">
+
+                    <div class="post-icons">
+                        <div class="left">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </div>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                    </div>
+                    
+                    <div class="likes">
+                        <img src="assets/liked-1.jpg" alt="">
+                        <img src="assets/liked-2.jpg" alt="">
+                        <img src="assets/liked-3.jpg" alt="">
+
+                        <p>Liked by <b>Bill Smash</b> and <b>3.241 others</b></p>
+                    </div>
+                    
+                    <p class="description"><b>Suarez Sim</b> Thank you to all my supporters out there, we've made it once again 🏃‍♂️</p>
+                    <a class="comments">View all 1063 comments</a>
+                </div>
+
+                <!-- FOURTH POST -->
+                <div class="post-container">
+
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/john-pp.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <h4>John Albert</h4>
+                                <p class="text-muted">Durban, 6 hours ago</p>
+                            </span>
+                            <b>...</b>
+                    </div>
+                        
+                    <img class="posted-image" src="assets/post-4.jpg" alt="">
+
+                    <div class="post-icons">
+                        <div class="left">
+                            <i class="fa fa-heart" aria-hidden="true" style="color: var(--primary);"></i>
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </div>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                    </div>
+                    
+                    <div class="likes">
+                        <img src="assets/liked-1.jpg" alt="">
+                        <img src="assets/liked-2.jpg" alt="">
+                        <img src="assets/liked-3.jpg" alt="">
+
+                        <p>Liked by <b>You</b> and <b>96 others</b></p>
+                    </div>
+                    
+                    <p class="description"><b>Luiz Ferran</b> Happy breakfast time with my family. THANK YOU GOD!</p>
+                    <a class="comments">View all 27 comments</a>
+                </div>
+
+                <!-- LOAD MORE POSTS -->
+                <div id="load_more">
+
+                    <!-- FIFTH POST -->
+                    <div class="post-container">
+
+                        <div class="top-feed">
+                            <div class="friends-profile-picture">
+                                <img src="assets/sizwe-pp.jpg" alt="profile picture">
+                            </div>
+                                <span>
+                                    <h4>Sizwe Masota</h4>
+                                    <p class="text-muted">Cape Town, 3 hours ago</p>
+                                </span>
+                                <b>...</b>
+                        </div>
+                            
+                        <img class="posted-image" src="assets/post-5.jpg" alt="">
+
+                        <div class="post-icons">
+                            <div class="left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </div>
+                            
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                        </div>
+                        
+                        <div class="likes">
+                            <img src="assets/liked-3.jpg" alt="">
+                            <img src="assets/liked-1.jpg" alt="">
+                            <img src="assets/liked-2.jpg" alt="">
+
+                            <p>Liked by <b>Tavinho Candala</b> and <b>526 others</b></p>
+                        </div>
+                        
+                        <p class="description"><b>Sizwe Masota</b> Happy braai day friends 🍻😃</p>
+                        <a class="comments">View all 51 comments</a>
+                    </div>
+
+                    <!-- SIXTH POST -->
+                    <div class="post-container">
+
+                        <div class="top-feed">
+                            <div class="friends-profile-picture">
+                                <img src="assets/post-6.jpg" alt="profile picture">
+                            </div>
+                                <span>
+                                    <h4>Loriel Chaz</h4>
+                                    <p class="text-muted">Cape Town, 2 days ago</p>
+                                </span>
+                                <b>...</b>
+                        </div>
+                            
+                        <img class="posted-image" src="assets/post-6.jpg" alt="">
+
+                        <div class="post-icons">
+                            <div class="left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </div>
+                            
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+
+
+                        </div>
+                        
+                        <div class="likes">
+                            <img src="assets/liked-2.jpg" alt="">
+                            <img src="assets/liked-1.jpg" alt="">
+                            <img src="assets/amelie.jpg" alt="">
+
+                            <p>Liked by <b>Amelie Loz</b> and <b>235 others</b></p>
+                        </div>
+                        
+                        <p class="description"><b>Loriel Chaz</b> There's nothing more enjoyable than watching the sunrise on the beautiful mather city #capetown </p>
+                        <a class="comments">View all 68 comments</a>
+                    </div>
+
+                </div>
+                    <a href="" id="btn-load" class="btn">Load More...</a>
+
+               </div>
+            </div>
+
+            <!----------------- RIGHT - GRID --------------- -->
+        
+            <div class="right">
+                <div class="test-2">
+                    <div class="side-container birthdays">
+                        <h4><i class="fa fa-gift" aria-hidden="true"></i>&nbsp; Birthdays</h4>
+                        <span><a><b>Ame Loz</b> and <b>3 others</b> have their birthday's today</a></span>
+                    </div>
+    
+                    <h4 class="requests">Requests</h4>
+    
+                    <div id="side_container" class="side-container hide" style="margin-top: 0.6rem">
+                        <p class="accepted_msg">Request Accepted 🥳</p>
+                        <p class="removed_msg">Request Removed 🙃</p>
+                       <div class="requests_inner_container">
+                        <div class="top-feed">
+                            <div class="friends-profile-picture">
+                                <img src="assets/judas-iscariot-9358799-1-402.jpg" alt="profile picture">
+                            </div>
+                                <span>
+                                    <h4>Judas Iscariot</h4>
+                                    <p class="text-muted-m">5 mutual friends</p>
+                                </span>
+    
+                        </div>
+                            <div class="btns-inline">
+                                <a class="btn" onclick="accepted(); timeOut();">Accept</a>
+                                <a class="btn btn-clear" onclick="removed(); timeOut()">Decline</a>
+                            </div>
+                       </div>
+                    </div>
+                    <div id="side_container2" class="side-container hide2" style="margin-top: 0.6rem">
+                        <p class="accepted_msg2">Request Accepted 🥳</p>
+                        <p class="removed_msg2">Request Removed 🙃</p>
+                       <div class="requests_inner_container2">
+                        <div class="top-feed">
+                            <div class="friends-profile-picture">
+                                <img src="assets/Leila-alcasid-solo.jpg" alt="profile picture">
+                            </div>
+                                <span>
+                                    <h4>Leila N 🌛</h4>
+                                    <p class="text-muted-m">12 mutual friends</p>
+                                </span>
+    
+                        </div>
+                            <div class="btns-inline">
+                                <a class="btn" onclick="acceptedTwo(); timeOutTwo();">Accept</a>
+                                <a class="btn btn-clear" onclick="removedTwo(); timeOutTwo()">Decline</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="side_container3" class="side-container hide3" style="margin-top: 0.6rem">
+                        <p class="accepted_msg3">Request Accepted 🥳</p>
+                        <p class="removed_msg3">Request Removed 🙃</p>
+                        <div class="requests_inner_container3">
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/james.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <h4>Steven James</h4>
+                                        <p class="text-muted-m">2 mutual friends</p>
+                                    </span>
+        
+                            </div>
+                                <div class="btns-inline">
+                                    <a class="btn" onclick="acceptedThree(); timeOutThree();">Accept</a>
+                                    <a class="btn btn-clear" onclick="removedThree(); timeOutThree()">Decline</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messages-container msgs" onclick="chat();">
+                    <div class="messages">
+                            <h3>Messages</h3>
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                        </div>
+    
+                        <div class="messages-box">
+
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/amelie.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <div class="top">
+                                            <h4>Amelie Loz</h4>
+                                            <h5>A few seconds ago</h5>
+                                        </div>
+                                        <p class="text-muted">Just called the uber, see u.</p>
+                                    </span>
+                            </div>
+
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/jay.jpg" alt="profile picture">
+                                    <div class="online"></div>
+                                </div>
+                                    <span>
+                                        <div class="top">
+                                            <h4>Jay B</h4>
+                                            <h5>09  April 2022</h5>
+                                        </div>
+                                        <p class="text-bold">Thanks again...</p>
+                                    </span>
+                            </div>
+                            
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/anna.jpg" alt="profile picture">
+                                    <div class="online"></div>
+                                </div>
+                                    <span>
+                                        <div class="top">
+                                            <h4>Anna Bel</h4>
+                                            <h5>12 April 2022</h5>
+                                        </div>
+                                        <p class="text-bold">You can send those...</p>
+                                    </span>
+                            </div>
+    
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/sizwe-pp.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <div class="top">
+                                            <h4>Sizwe Masota</h4>
+                                            <h5>15 April 2022</h5>
+                                        </div>
+                                        <p class="text-bold">Still waiting to get...</p>
+                                    </span>
+                            </div>
+                        </div>
+                        <!-- <div class="search-bar">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input id="search_msg" type="search" placeholder="Search messages">
+                        </div>
+                        
+                        <div id="tab" class="tab">
+                            <button id="btn" onclick="myFunction()">Primary</button>
+                            <button onclick="myFunction()">General</button>
+                            <button>Requests</button>
+                        </div>
+    
+                        <div id="primary" class="primary">
+                            <div class="top-feed">
+                                <div class="friends-profile-picture">
+                                    <img src="assets/amelie.jpg" alt="profile picture">
+                                </div>
+                                    <span>
+                                        <h4>Amelie Loz</h4>
+                                        <p class="text-muted">Just called the uber, see u.</p>
+                                    </span>
+                            </div>
+    
+                            
+                        </div>
+                      
+                </div> -->
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
