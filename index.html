@@ -73,7 +73,7 @@
 
             <!----------------- SIDEBAR --------------- -->
             <div class="left">
-               <div class="test">
+               <div class="left-inner">
                 <div class="handle side-container">
                     <div class="profile-picture">
                         <img src="assets/pp.jpg" alt="profile picture">
@@ -144,8 +144,10 @@
                         <h4 class="requests">Friend Requests</h4>
     
                         <div id="side_container" class="side-container hide" style="margin-top: 0.6rem">
+                            
                             <p class="accepted_msg">Request Accepted 🥳</p>
                             <p class="removed_msg">Request Removed 🙃</p>
+
                            <div class="requests_inner_container">
                             <div class="top-feed">
                                 <div class="friends-profile-picture">
@@ -213,7 +215,7 @@
                     </div>
                </div>
             </div>
-            <div class="inac">
+            <div class="notification-container">
                 <div class="notification-action">
                     <div class="friends-profile-picture">
                         <img src="assets/jay-z.jpg" alt="profile picture">
@@ -563,7 +565,7 @@
             <!----------------- RIGHT - GRID --------------- -->
         
             <div class="right">
-                <div class="test-2">
+                <div class="right-inner">
                     <div class="side-container birthdays">
                         <h4><i class="fa fa-gift" aria-hidden="true"></i>&nbsp; Birthdays</h4>
                         <span><a><b>Ame Loz</b> and <b>3 others</b> have their birthday's today</a></span>
@@ -572,9 +574,12 @@
                     <h4 class="requests">Requests</h4>
     
                     <div id="side_container" class="side-container hide" style="margin-top: 0.6rem">
+
                         <p class="accepted_msg">Request Accepted 🥳</p>
                         <p class="removed_msg">Request Removed 🙃</p>
+
                        <div class="requests_inner_container">
+
                         <div class="top-feed">
                             <div class="friends-profile-picture">
                                 <img src="assets/judas-iscariot-9358799-1-402.jpg" alt="profile picture">
@@ -592,9 +597,12 @@
                        </div>
                     </div>
                     <div id="side_container2" class="side-container hide2" style="margin-top: 0.6rem">
+                        
                         <p class="accepted_msg2">Request Accepted 🥳</p>
                         <p class="removed_msg2">Request Removed 🙃</p>
-                       <div class="requests_inner_container2">
+                      
+                        <div class="requests_inner_container2">
+                       
                         <div class="top-feed">
                             <div class="friends-profile-picture">
                                 <img src="assets/Leila-alcasid-solo.jpg" alt="profile picture">
@@ -634,93 +642,69 @@
                 </div>
 
                 <div class="messages-container msgs" onclick="chat();">
+
                     <div class="messages">
-                            <h3>Messages</h3>
-                            <i class="fa fa-commenting" aria-hidden="true"></i>
-                        </div>
+                        <h3>Messages</h3>
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </div>
     
-                        <div class="messages-box">
+                <div class="messages-box">
 
-                            <div class="top-feed">
-                                <div class="friends-profile-picture">
-                                    <img src="assets/amelie.jpg" alt="profile picture">
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/amelie.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <div class="top">
+                                    <h4>Amelie Loz</h4>
+                                    <h5>A few seconds ago</h5>
                                 </div>
-                                    <span>
-                                        <div class="top">
-                                            <h4>Amelie Loz</h4>
-                                            <h5>A few seconds ago</h5>
-                                        </div>
-                                        <p class="text-muted">Just called the uber, see u.</p>
-                                    </span>
-                            </div>
+                                <p class="text-muted">Just called the uber, see u.</p>
+                            </span>
+                    </div>
 
-                            <div class="top-feed">
-                                <div class="friends-profile-picture">
-                                    <img src="assets/jay.jpg" alt="profile picture">
-                                    <div class="online"></div>
-                                </div>
-                                    <span>
-                                        <div class="top">
-                                            <h4>Jay B</h4>
-                                            <h5>09  April 2022</h5>
-                                        </div>
-                                        <p class="text-bold">Thanks again...</p>
-                                    </span>
-                            </div>
-                            
-                            <div class="top-feed">
-                                <div class="friends-profile-picture">
-                                    <img src="assets/anna.jpg" alt="profile picture">
-                                    <div class="online"></div>
-                                </div>
-                                    <span>
-                                        <div class="top">
-                                            <h4>Anna Bel</h4>
-                                            <h5>12 April 2022</h5>
-                                        </div>
-                                        <p class="text-bold">You can send those...</p>
-                                    </span>
-                            </div>
-    
-                            <div class="top-feed">
-                                <div class="friends-profile-picture">
-                                    <img src="assets/sizwe-pp.jpg" alt="profile picture">
-                                </div>
-                                    <span>
-                                        <div class="top">
-                                            <h4>Sizwe Masota</h4>
-                                            <h5>15 April 2022</h5>
-                                        </div>
-                                        <p class="text-bold">Still waiting to get...</p>
-                                    </span>
-                            </div>
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/jay.jpg" alt="profile picture">
+                            <div class="online"></div>
                         </div>
-                        <!-- <div class="search-bar">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <input id="search_msg" type="search" placeholder="Search messages">
-                        </div>
-                        
-                        <div id="tab" class="tab">
-                            <button id="btn" onclick="myFunction()">Primary</button>
-                            <button onclick="myFunction()">General</button>
-                            <button>Requests</button>
-                        </div>
-    
-                        <div id="primary" class="primary">
-                            <div class="top-feed">
-                                <div class="friends-profile-picture">
-                                    <img src="assets/amelie.jpg" alt="profile picture">
+                            <span>
+                                <div class="top">
+                                    <h4>Jay B</h4>
+                                    <h5>09  April 2022</h5>
                                 </div>
-                                    <span>
-                                        <h4>Amelie Loz</h4>
-                                        <p class="text-muted">Just called the uber, see u.</p>
-                                    </span>
-                            </div>
-    
-                            
+                                <p class="text-bold">Thanks again...</p>
+                            </span>
+                    </div>
+                    
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/anna.jpg" alt="profile picture">
+                            <div class="online"></div>
                         </div>
-                      
-                </div> -->
+                            <span>
+                                <div class="top">
+                                    <h4>Anna Bel</h4>
+                                    <h5>12 April 2022</h5>
+                                </div>
+                                <p class="text-bold">You can send those...</p>
+                            </span>
+                    </div>
+
+                    <div class="top-feed">
+                        <div class="friends-profile-picture">
+                            <img src="assets/sizwe-pp.jpg" alt="profile picture">
+                        </div>
+                            <span>
+                                <div class="top">
+                                    <h4>Sizwe Masota</h4>
+                                    <h5>15 April 2022</h5>
+                                </div>
+                                <p class="text-bold">Still waiting to get...</p>
+                            </span>
+                    </div>
+                </div>
+             
             </div>
         </div>
 

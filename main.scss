@@ -735,11 +735,7 @@ main {
     }
 }
 
-// .show-content {
-//     background-color: red;
-//     color: white;
-// }
-.test, .test-2 {
+.left-inner, .right-inner {
     position: sticky;
     top: 14%;
     margin-bottom: 20%;
@@ -772,7 +768,7 @@ main {
     color: var(--primary);
 }
 
-.inac {
+.notification-container {
     position: fixed;
     top: 37%;
     left: 26.6%;
@@ -849,7 +845,7 @@ main {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
-    margin-top: -900px;
+    margin-top: -9000px;
 
     img {
         width: 28%;
@@ -905,7 +901,7 @@ main {
                 margin: 0;
                 padding: 0 18px;     
                 
-                .test {
+                .left-inner {
                     margin-bottom: 10%;
                 }
                 .btn-create-sb {
@@ -1079,7 +1075,7 @@ main {
         }
     }
 
-    .post-feed, .test-2 {
+    .post-feed, .right-inner {
         position: relative;
         z-index: -9;
     }
