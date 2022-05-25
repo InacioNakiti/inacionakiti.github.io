@@ -796,7 +796,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   display: none;
 }
 
-.test, .test-2 {
+.left-inner, .right-inner {
   position: -webkit-sticky;
   position: sticky;
   top: 14%;
@@ -829,7 +829,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   color: var(--primary);
 }
 
-.inac {
+.notification-container {
   position: fixed;
   top: 37%;
   left: 26.6%;
@@ -843,7 +843,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   display: none;
 }
 
-.inac::before {
+.notification-container::before {
   content: "\25C0";
   color: white;
   position: absolute;
@@ -852,7 +852,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   font-size: 2rem;
 }
 
-.inac .notification-action {
+.notification-container .notification-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,27 +866,27 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   margin-bottom: 10px;
 }
 
-.inac .notification-action .friends-profile-picture img {
+.notification-container .notification-action .friends-profile-picture img {
   width: 3.5rem;
   border-radius: 50%;
   margin-right: 1rem;
 }
 
-.inac .notification-action .friend-action {
+.notification-container .notification-action .friend-action {
   font-size: .9rem;
   font-weight: 300;
 }
 
-.inac .notification-action .text-muted-action {
+.notification-container .notification-action .text-muted-action {
   font-size: .8rem;
   color: #d4d4d4;
 }
 
-.inac .notification-action:last-child {
+.notification-container .notification-action:last-child {
   margin-bottom: 0;
 }
 
-.inac h4:hover, .inac img:hover {
+.notification-container h4:hover, .notification-container img:hover {
   color: var(--primary);
   cursor: pointer;
 }
@@ -917,7 +917,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  margin-top: -900px;
+  margin-top: -9000px;
 }
 
 .status-img img, .status-img2 img, .status-img3 img, .status-img4 img {
@@ -967,7 +967,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
     margin: 0;
     padding: 0 18px;
   }
-  main .container .test {
+  main .container .left-inner {
     margin-bottom: 10%;
   }
   main .container .btn-create-sb {
@@ -1139,7 +1139,7 @@ main .right .btns-inline .btn, main .right .btns-inline .btn-clear {
     margin: 0 auto;
     margin-top: 1.2rem;
   }
-  .post-feed, .test-2 {
+  .post-feed, .right-inner {
     position: relative;
     z-index: -9;
   }

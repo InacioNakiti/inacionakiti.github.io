@@ -1,8 +1,8 @@
 "use strict";
 
 const accepted = () => {
-    document.querySelectorAll("requests_inner_container").style.display = 'none';
-    document.querySelectorAll("accepted_msg").style.display = 'block';
+    document.querySelector(".requests_inner_container").style.display = 'none';
+    document.querySelector(".accepted_msg").style.display = 'block';
 }
 const acceptedTwo = () => {
     document.querySelector(".requests_inner_container2").style.display = 'none';
@@ -15,8 +15,8 @@ const acceptedThree = () => {
 
 // ::::::::::::::::::::::: DECLINED REQUESTS :::::::::::::::::::::::::::: // 
 const removed = () => {
-    document.querySelectorAll("requests_inner_container").style.display = 'none';
-    document.querySelectorAll("removed_msg").style.display = 'block';
+    document.querySelector(".requests_inner_container").style.display = 'none';
+    document.querySelector(".removed_msg").style.display = 'block';
 }
 const removedTwo = () => {
     document.querySelector(".requests_inner_container2").style.display = 'none';
@@ -26,13 +26,13 @@ const removedThree = () => {
     document.querySelector(".requests_inner_container3").style.display = 'none';
     document.querySelector(".removed_msg3").style.display = 'block';
 }
+
 // END ::DR
 
 const timeOut = () => {
 setTimeout(() => {
   
-    document.querySelector(".test-2 .hide").style.display = 'none';
-    // document.querySelector(".test-2 .hide").style.display = 'none';
+    document.querySelector(".right-inner .hide").style.display = 'none';
 
   }, 2500); 
 }
@@ -68,10 +68,10 @@ menuItems.forEach(item => {
         item.classList.add('active');
 
         if(item.classList.contains('notification-popup')) {
-            document.querySelector('.inac').style.display = 'block';
+            document.querySelector('.notification-container').style.display = 'block';
             document.querySelector('.alert').style.display = 'none';
         } else {
-            document.querySelector('.inac').style.display = 'none';
+            document.querySelector('.notification-container').style.display = 'none';
         }
     })
 });
